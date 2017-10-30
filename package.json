@@ -1,0 +1,22 @@
+{
+  "name": "subscan",
+  "version": "1.0.0",
+  "description": "A fast and accurate multi-nameserver subdomain bruteforcer",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Marzavec",
+  "license": "WTFPL",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/marzavec/subscan.git"
+  },
+  "dependencies": {
+    "args": "^3.0.7",
+    "chalk": "^2.3.0",
+    "native-dns": "^0.7.0",
+    "ya-csv": "^0.10.1"
+  }
+}
