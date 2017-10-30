@@ -17,6 +17,13 @@ class Core {
   constructor (args, exposeAPI) {
     this.args = args;
     this.isApi = exposeAPI;
+
+    // verify we have a valid target, because I suppose that's needed
+    if (typeof this.args.domain === 'undefined' && this.isApi === false) {
+      console.log(chalk.red(' No valid target') + chalk.grey(', provide a target by using the -d arguement.'));
+      process.exit();
+    }
+
     this.dnsHandlers = [];
     this.results = [];
     this.announceInterval = null;
